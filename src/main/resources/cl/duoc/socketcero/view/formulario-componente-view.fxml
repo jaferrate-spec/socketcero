@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="69.0" layoutY="14.0" text="Formulario Componentes">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="46.0" text="Codigo" />
+      <TextField layoutX="14.0" layoutY="63.0" />
+      <TextField layoutX="14.0" layoutY="122.0" />
+      <Label layoutX="14.0" layoutY="98.0" text="Nombre" />
+      <DatePicker layoutX="200.0" layoutY="94.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="201.0" layoutY="67.0" text="Fecha Lanzamiento" />
+      <Label layoutX="14.0" layoutY="156.0" text="Marca" />
+      <TextField layoutX="14.0" layoutY="181.0" />
+      <TextField layoutX="201.0" layoutY="181.0" />
+      <Label layoutX="201.0" layoutY="156.0" text="RUT Proovedor" />
+      <Label layoutX="14.0" layoutY="220.0" text="Tipo de Componente" />
+      <ComboBox layoutX="14.0" layoutY="249.0" prefHeight="25.0" prefWidth="157.0" />
+      <ComboBox layoutX="203.0" layoutY="249.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="201.0" layoutY="220.0" text="Estado" />
+      <Pane fx:id="paneProcesador" layoutX="16.0" layoutY="314.0" prefHeight="159.0" prefWidth="370.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Frecuencia (GHz)" />
+            <TextField layoutX="14.0" layoutY="37.0" />
+            <Label layoutX="14.0" layoutY="68.0" text="Cantidad de nucleos" />
+            <TextField layoutX="14.0" layoutY="85.0" />
+            <Label layoutX="185.0" layoutY="14.0" text="Socket" />
+            <TextField layoutX="179.0" layoutY="37.0" />
+         </children>
+      </Pane>
+      <Button layoutX="16.0" layoutY="483.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="202.0" text="Registrar" />
+      <Button layoutX="277.0" layoutY="483.0" mnemonicParsing="false" text="Cancelar" />
+      <Pane fx:id="panePlacaMadre" layoutX="15.0" layoutY="314.0" prefHeight="159.0" prefWidth="370.0" style="-fx-border-color: black;" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Socket" />
+            <TextField layoutX="14.0" layoutY="37.0" />
+            <Label layoutX="14.0" layoutY="68.0" text="Tamaño" />
+            <Label layoutX="185.0" layoutY="14.0" text="Tipo de memoria" />
+            <ComboBox layoutX="185.0" layoutY="37.0" prefWidth="150.0" />
+            <ComboBox layoutX="13.0" layoutY="85.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneTarjetaGrafica" layoutX="15.0" layoutY="314.0" prefHeight="159.0" prefWidth="370.0" style="-fx-border-color: black;" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="VRAM, (GB)" />
+            <TextField layoutX="14.0" layoutY="37.0" />
+            <Label layoutX="14.0" layoutY="68.0" text="Consumo (W)" />
+            <Label layoutX="185.0" layoutY="14.0" text="Interfaz" />
+            <ComboBox layoutX="185.0" layoutY="37.0" prefWidth="150.0" />
+            <TextField layoutX="14.0" layoutY="85.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneMemoriaRam" layoutX="15.0" layoutY="314.0" prefHeight="159.0" prefWidth="370.0" style="-fx-border-color: black;" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Capacidad (GB)" />
+            <TextField layoutX="14.0" layoutY="37.0" />
+            <Label layoutX="14.0" layoutY="68.0" text="Velocidad (MHz)" />
+            <Label layoutX="185.0" layoutY="14.0" text="Tipo Memoria" />
+            <ComboBox layoutX="185.0" layoutY="37.0" prefWidth="150.0" />
+            <TextField layoutX="14.0" layoutY="85.0" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

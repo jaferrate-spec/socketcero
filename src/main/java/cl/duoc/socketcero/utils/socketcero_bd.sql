@@ -30,8 +30,8 @@ CREATE TABLE socketcero.procesador (
 CREATE TABLE socketcero.placa_madre (
     codigo_componente varchar(7) primary key,
     socket varchar(20) not null,
-    tipo_memoria ENUM('DDR1', 'DDR2', 'DDR3', 'DDR4', 'DDR5'),
-    frecuencia_mhz double not null,
+    tipo_memoria ENUM('DDR1', 'DDR2', 'DDR3', 'DDR4', 'DDR5') not null,
+    tamanio ENUM('ATX', 'MICRO-ATX', 'MINI-ITX', 'E-ATX') not null,
     FOREIGN KEY (codigo_componente) REFERENCES componente(codigo_componente) ON DELETE CASCADE
 );
 
@@ -39,7 +39,7 @@ CREATE TABLE socketcero.tarjeta_grafica (
     codigo_componente varchar(7) primary key,
     vram double not null check (vram > 0),
     consumo_mw double not null check (consumo_mw > 0),
-    interfaz varchar(10) not null,
+    interfaz ENUM('PCI 3.0 x16', 'PCIe 4.0 x16', 'PCI 5.0 x16')not null,
     FOREIGN KEY (codigo_componente) REFERENCES componente(codigo_componente) ON DELETE CASCADE
 );
 
